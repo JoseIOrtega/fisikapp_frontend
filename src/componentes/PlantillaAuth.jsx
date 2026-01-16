@@ -7,7 +7,7 @@ function PlantillaAuth({ children }){
             <img src={logo} alt="Logo" className="logo" />
         </div>
         <p className="logo-frase">.......Frase......</p>
-        <div className="formulario-login">
+        <div className="card">
             {children}
         </div>
     </div>
