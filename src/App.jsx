@@ -5,7 +5,6 @@ import RecuperarContrasena from './paginas/RecuperarContrasena'
 function App() {
   return (
     <div>
-      <Registrar></Registrar>
       <Login></Login>
       {/* Aquí cada quien llama a su componente el que va a trabajar....*/}
       {/* ejemplo: <Login></Login> ó <Registrar></Registrar> ó <RecuperarContrasena></RecuperarContrasena>*/}

@@ -4,39 +4,18 @@ import "./Login.css"
 function Login() {
   return (
     <PlantillaAuth>
-       <div className="login-card">
-        <h2 className="login-title">Fisikapp</h2>
-        <p className="login-subtitle">
-          Aprende y construye laboratorios interactivos
-        </p>
-
-        <form className="login-form">
-          <label>Correo electrónico:</label>
-          <input
-            type="email"
-            placeholder="Ejemplo@gmail.com"
-          />
-
-          <label>Contraseña:</label>
-          <input
-            type="password"
-            placeholder="Ingresa tu contraseña"
-          />
-
-          <a href="#" className="forgot-password">
-            ¿Olvidaste tu contraseña?
-          </a>
-
-          <button type="submit" className="btn-login">
-            Iniciar sesión
-          </button>
-
-          <button type="button" className="btn-register">
-            Registrarse
-          </button>
+      <p className="logo-frase">"Aprende y construye laboratorios interactivos"</p>
+      <div className="formulario-login">
+        <form id="formulario-login" >
+          <label for="email">Correo electrónico:</label>
+          <input type="email" name="email" placeholder="Ejemplo@gmail.com" required />
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" placeholder="Ingresa tu contraseña" required/>
+          <a class="olvidaste-contrasena" href="./olvidaste.html">Olvidaste tu contraseña?</a>
+          <input type="submit" value="Iniciar sesión" className="boton-iniciar-sesion" />
+          <a className="boton-registrarse" href="./registro.html">Registrarse</a>
         </form>
-      </div>  
-        
+      </div>
     </PlantillaAuth>
   );
 }

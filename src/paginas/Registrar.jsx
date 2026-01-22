@@ -32,6 +32,7 @@ function Registrar() {
 
   return (
     <PlantillaAuth>
+      <p className="logo-frase-registro">Registro - Crear cuenta</p>
       <form className="formulario-login" onSubmit={handleSubmit}>
         <label>Nombre completo:</label>
         <input
