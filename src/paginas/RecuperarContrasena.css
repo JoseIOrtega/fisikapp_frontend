@@ -1,0 +1,32 @@
+
+.forgot-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.forgot-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+input {
+  width: 85%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+button {
+  width: 89%;
+  margin-bottom: 10px;
+}
+
+
+.back-link {
+  display: block;
+  text-align: center;
+}
