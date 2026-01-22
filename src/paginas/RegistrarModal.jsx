@@ -1,3 +1,5 @@
+
+
 function RegistrarModal({ mostrar, cerrar }) {
   if (!mostrar) return null;
 
