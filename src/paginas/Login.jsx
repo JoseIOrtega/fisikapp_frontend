@@ -11,9 +11,9 @@ function Login() {
           <input type="email" name="email" placeholder="Ejemplo@gmail.com" required />
           <label for="password">Contraseña:</label>
           <input type="password" name="password" placeholder="Ingresa tu contraseña" required/>
-          <a class="olvidaste-contrasena" href="./olvidaste.html">Olvidaste tu contraseña?</a>
+          <a class="olvidaste-contrasena" >Olvidaste tu contraseña?</a>
           <input type="submit" value="Iniciar sesión" className="boton-iniciar-sesion" />
-          <a className="boton-registrarse" href="./registro.html">Registrarse</a>
+          <a className="boton-registrarse" >Registrarse</a>
         </form>
       </div>
     </PlantillaAuth>
