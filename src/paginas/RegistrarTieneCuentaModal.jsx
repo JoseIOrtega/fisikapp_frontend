@@ -8,7 +8,8 @@ function RegistrarTieneCuentaModal({ mostrar, cerrar }) {
       <div className="modal-registro-contenido">
         <h3>Error</h3>
         <p>Este correo ya se encuentra registrado.<br />
-        Por favor, inicia sesión o recupera tu contraseña.</p>
+           Por favor, inicia sesión o recupera tu contraseña.
+        </p>
         <button onClick={cerrar}>Ir a iniciar sesión</button>
       </div>
     </div>

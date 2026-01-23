@@ -14,7 +14,7 @@ function RestablecerContrasena() {
   const [mostrarModalToken, setMostrarModalToken] = useState(false);
 
 
-  const handleSubmit = (e) => {
+  const enviarFormulario = (e) => {
     e.preventDefault();
 
     // VALIDACIÓN BÁSICA FRONTEND
@@ -38,7 +38,7 @@ function RestablecerContrasena() {
     <PlantillaAuth>
       <p className="logo-frase-recuperar">Restablecer contraseña</p>
 
-      <form id="formulario-nueva-contrasena" className="formulario-login" onSubmit={handleSubmit}>
+      <form id="formulario-nueva-contrasena" className="formulario-login" onSubmit={enviarFormulario}>
         <label htmlFor="password">Nueva contraseña:</label>
         <input type="password" name="password" placeholder="Ingrese una contraseña" value={password} onChange={(e) => setPassword(e.target.value)} required/>
         <label htmlFor="confirmPassword">Confirmar contraseña:</label>

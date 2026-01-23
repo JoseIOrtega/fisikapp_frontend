@@ -19,11 +19,11 @@ function Registrar() {
   const [mostrarModalTieneCuenta, setMostrarModalTieneCuenta] = useState(false);
 
 
-  const handleChange = (e) => {
+  const cambiarCampo = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const enviarFormulario = (e) => {
     e.preventDefault();
 
     if (form.password !== form.confirmPassword) {
@@ -43,14 +43,14 @@ function Registrar() {
   return (
     <PlantillaAuth>
       <p className="logo-frase-registro">Registro - Crear cuenta</p>
-      <form className="formulario-login" onSubmit={handleSubmit}>
+      <form className="formulario-login" onSubmit={enviarFormulario}>
         <label>Nombre completo:</label>
         <input
           type="text"
           name="nombre"
           placeholder="Ingrese su nombre"
           value={form.nombre}
-          onChange={handleChange}
+          onChange={cambiarCampo}
           required
         />
 
@@ -60,7 +60,7 @@ function Registrar() {
           name="email"
           placeholder="Ingrese su correo"
           value={form.email}
-          onChange={handleChange}
+          onChange={cambiarCampo}
           required
         />
 
@@ -70,7 +70,7 @@ function Registrar() {
           name="password"
           placeholder="Ingrese una contraseña"
           value={form.password}
-          onChange={handleChange}
+          onChange={cambiarCampo}
           required
         />
 
@@ -80,7 +80,7 @@ function Registrar() {
           name="confirmPassword"
           placeholder="Repita la contraseña"
           value={form.confirmPassword}
-          onChange={handleChange}
+          onChange={cambiarCampo}
           required
         />
 

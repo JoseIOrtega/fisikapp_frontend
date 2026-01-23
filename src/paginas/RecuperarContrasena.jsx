@@ -9,7 +9,7 @@ function RecuperarContrasena() {
   const [mostrarModal, setMostrarModal] = useState(false);
 
 
-  const handleSubmit = (e) => {
+  const enviarFormulario = (e) => {
     e.preventDefault();
 
     // aquí irá el backend más adelante
@@ -19,7 +19,7 @@ function RecuperarContrasena() {
   return (
     <PlantillaAuth>
       <p className="logo-frase-recuperar">¿Olvidaste tu contraseña?</p>
-      <form id="formulario-olvidaste" className="formulario-olvidaste" onSubmit={handleSubmit}>
+      <form id="formulario-olvidaste" className="formulario-olvidaste" onSubmit={enviarFormulario}>
         <label className="olvidaste-mensaje">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</label>
         <input type="email" name="email" placeholder="Ingrese su correo" value={email} onChange={(e) => setEmail(e.target.value)} required/>
         <input type="submit" value="Enviar enlace de recuperación" className="boton-envio-enlace"/>
