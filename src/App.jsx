@@ -6,7 +6,7 @@ import RestablecerContrasena from './paginas/RestablecerContrasena'
 function App() {
   return (
     <div>
-      <Login></Login>
+      <RestablecerContrasena></RestablecerContrasena>
     </div>
   )
 }

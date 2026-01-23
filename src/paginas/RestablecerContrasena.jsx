@@ -24,7 +24,7 @@ function RestablecerContrasena() {
     }
 
     // SIMULACIÓN TOKEN INVÁLIDO (BACKEND FUTURO)
-    const tokenValido = false; // luego esto vendrá del backend
+    const tokenValido = true; // luego esto vendrá del backend
     if (!tokenValido) {
       setMostrarModalToken(true);
       return;
