@@ -1,9 +1,9 @@
 import { useState } from "react";
-import PlantillaAuth from "../componentes/PlantillaAuth";
-import RestablecerErrorModal from "./RestablecerErrorModal";
-import RestablecerExitoModal from "./RestablecerExitoModal";
-import RestablecerTokenModal from "./RestablecerTokenModal";
-import "./RestablecerContrasena.css";
+import PlantillaAuth from "../../componentes/PlantillaAuth";
+import RestablecerErrorModal from "./modales/RestablecerErrorModal";
+import RestablecerExitoModal from "./modales/RestablecerExitoModal";
+import RestablecerTokenModal from "./modales/RestablecerTokenModal";
+import "../../styles/auth/RestablecerContrasena.css";
 
 function RestablecerContrasena() {
   const [password, setPassword] = useState("");

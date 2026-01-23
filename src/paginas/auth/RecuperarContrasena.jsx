@@ -1,8 +1,8 @@
-import PlantillaAuth from "../componentes/PlantillaAuth";
-import RecuperarContrasenaModal from "./RecuperarContrasenaModal";
+import PlantillaAuth from "../../componentes/PlantillaAuth";
+import RecuperarContrasenaModal from "./modales/RecuperarContrasenaModal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./RecuperarContrasena.css";
+import "../../styles/auth/RecuperarContrasena.css";
 
 function RecuperarContrasena() {
 

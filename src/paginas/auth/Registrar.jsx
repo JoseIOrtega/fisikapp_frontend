@@ -1,10 +1,10 @@
-import PlantillaAuth from "../componentes/PlantillaAuth";
-import RegistrarExitoModal from "./RegistrarExitoModal";
-import RegistrarErrorModal from "./RegistrarErrorModal";
-import RegistrarTieneCuentaModal from "./RegistrarTieneCuentaModal";
+import PlantillaAuth from "../../componentes/PlantillaAuth";
+import RegistrarExitoModal from "./modales/RegistrarExitoModal";
+import RegistrarErrorModal from "./modales/RegistrarErrorModal";
+import RegistrarTieneCuentaModal from "./modales/RegistrarTieneCuentaModal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Registrar.css";
+import "../../styles/auth/Registrar.css";
 
 function Registrar() {
 

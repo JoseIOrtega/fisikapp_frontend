@@ -1,8 +1,8 @@
-import PlantillaAuth from "../componentes/PlantillaAuth";
-import LoginErrorModal from "./LoginErrorModal";
+import PlantillaAuth from "../../componentes/PlantillaAuth";
+import LoginErrorModal from "./modales/LoginErrorModal";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./Login.css";
+import "../../styles/auth/Login.css";
 
 function Login() {
 
