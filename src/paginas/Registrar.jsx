@@ -3,10 +3,11 @@ import RegistrarExitoModal from "./RegistrarExitoModal";
 import RegistrarErrorModal from "./RegistrarErrorModal";
 import RegistrarTieneCuentaModal from "./RegistrarTieneCuentaModal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Registrar.css";
 
-
 function Registrar() {
+
   const [form, setForm] = useState({
     nombre: "",
     email: "",
@@ -18,20 +19,27 @@ function Registrar() {
   const [mostrarModalError, setMostrarModalError] = useState(false);
   const [mostrarModalTieneCuenta, setMostrarModalTieneCuenta] = useState(false);
 
-
   const cambiarCampo = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const cerrarTodosLosModales = () => {
+    setMostrarModalExito(false);
+    setMostrarModalError(false);
+    setMostrarModalTieneCuenta(false);
+  };
+
   const enviarFormulario = (e) => {
     e.preventDefault();
+
+    cerrarTodosLosModales();
 
     if (form.password !== form.confirmPassword) {
       setMostrarModalError(true);
       return;
     }
 
-    // ESTE CASO SE USARÁ CUANDO HAYA BACKEND
+    // BACKEND FUTURO
     // if (correoYaRegistrado) {
     //   setMostrarModalTieneCuenta(true);
     //   return;
@@ -43,7 +51,9 @@ function Registrar() {
   return (
     <PlantillaAuth>
       <p className="logo-frase-registro">Registro - Crear cuenta</p>
+
       <form className="formulario-login" onSubmit={enviarFormulario}>
+
         <label>Nombre completo:</label>
         <input
           type="text"
@@ -90,18 +100,30 @@ function Registrar() {
           className="boton-crear-cuenta"
         />
 
-        <a className="boton-tienes-cuenta" href="/">
+        <Link className="boton-tienes-cuenta" to="/">
           ¿Ya tienes cuenta? Inicia sesión
-        </a>
+        </Link>
+
       </form>
 
-      <RegistrarExitoModal mostrar={mostrarModalExito} cerrar={() => setMostrarModalExito(false)}/>
-      <RegistrarErrorModal mostrar={mostrarModalError} cerrar={() => setMostrarModalError(false)}/>
-      <RegistrarTieneCuentaModal mostrar={mostrarModalTieneCuenta} cerrar={() => setMostrarModalTieneCuenta(false)}/>
+      <RegistrarExitoModal
+        mostrar={mostrarModalExito}
+        cerrar={cerrarTodosLosModales}
+      />
 
+      <RegistrarErrorModal
+        mostrar={mostrarModalError}
+        cerrar={cerrarTodosLosModales}
+      />
+
+      <RegistrarTieneCuentaModal
+        mostrar={mostrarModalTieneCuenta}
+        cerrar={cerrarTodosLosModales}
+      />
 
     </PlantillaAuth>
   );
 }
 
 export default Registrar;
+

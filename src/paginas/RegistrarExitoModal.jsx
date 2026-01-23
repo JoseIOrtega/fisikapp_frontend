@@ -1,6 +1,7 @@
-
+import { Link } from "react-router-dom";
 
 function RegistrarExitoModal({ mostrar, cerrar }) {
+
   if (!mostrar) return null;
 
   return (
@@ -8,7 +9,9 @@ function RegistrarExitoModal({ mostrar, cerrar }) {
       <div className="modal-registro-contenido">
         <h3>Registro exitoso</h3>
         <p>Tu cuenta ha sido creada correctamente.</p>
-        <button onClick={cerrar}>Ir a iniciar sesión</button>
+        <Link to="/" className="boton-volver-login" onClick={cerrar}>
+          Ir a iniciar sesión
+        </Link>
       </div>
     </div>
   );

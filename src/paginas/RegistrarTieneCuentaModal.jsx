@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function RegistrarTieneCuentaModal({ mostrar, cerrar }) {
 
@@ -10,7 +11,9 @@ function RegistrarTieneCuentaModal({ mostrar, cerrar }) {
         <p>Este correo ya se encuentra registrado.<br />
            Por favor, inicia sesión o recupera tu contraseña.
         </p>
-        <button onClick={cerrar}>Ir a iniciar sesión</button>
+        <Link to="/" className="boton-volver-login" onClick={cerrar}>
+          Ir a iniciar sesión
+        </Link>
       </div>
     </div>
   );

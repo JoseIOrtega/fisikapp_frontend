@@ -1,6 +1,7 @@
-import { useState } from "react";
 import PlantillaAuth from "../componentes/PlantillaAuth";
 import LoginErrorModal from "./LoginErrorModal";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./Login.css";
 
 function Login() {
@@ -8,6 +9,8 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mostrarError, setMostrarError] = useState(false);
+
+  const navigate = useNavigate();
 
   const enviarFormulario = (e) => {
     e.preventDefault();
@@ -18,19 +21,20 @@ function Login() {
       return;
     }
 
-    // AQUÍ IRÁ EL BACKEND
+    // AQUÍ IRÁ EL BACKEND MÁS ADELANTE
     // login(email, password)
 
     console.log("Datos enviados:", { email, password });
 
-    // SIMULACIÓN ERROR (backend futuro)
+    // SIMULACIÓN BACKEND
     const credencialesCorrectas = true;
     if (!credencialesCorrectas) {
       setMostrarError(true);
       return;
     }
 
-    // SI TODO SALE BIEN → REDIRECCIONAR
+    // LOGIN EXITOSO → REDIRECCIONAR
+    navigate("/dashboard");
   };
 
   return (
@@ -42,9 +46,9 @@ function Login() {
           <input type="email" name="email" placeholder="Ejemplo@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required/>
           <label htmlFor="password">Contraseña:</label>
           <input type="password" name="password" placeholder="Ingresa tu contraseña" value={password} onChange={(e) => setPassword(e.target.value)} required/>
-          <a className="olvidaste-contrasena" href="/">¿Olvidaste tu contraseña?</a>
-          <input type="submit" value="Iniciar sesión" className="boton-iniciar-sesion"/>
-          <a className="boton-registrarse" href="/">Registrarse</a>
+          <Link className="olvidaste-contrasena" to="/recuperar-contrasena">¿Olvidaste tu contraseña?</Link>
+          <input type="submit" value="Iniciar sesión" className="boton-iniciar-sesion" />
+          <Link className="boton-registrarse" to="/registrar">Registrarse</Link>
         </form>
       </div>
 

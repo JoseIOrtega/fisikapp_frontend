@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function RecuperarContrasenaModal({ mostrar, cerrar }) {
 
   if (!mostrar) return null;
@@ -7,7 +9,8 @@ function RecuperarContrasenaModal({ mostrar, cerrar }) {
       <div className="modal-registro-contenido">
         <h3>Solicitud enviada</h3>
         <p>Si el correo se encuentra registrado, recibirás un enlace para restablecer tu contraseña.</p>
-        <button onClick={cerrar}>Volver a iniciar sesión</button>
+        <Link to="/" className="boton-volver-login" onClick={cerrar}>Volver a iniciar sesión</Link>
+
       </div>
     </div>
   );
