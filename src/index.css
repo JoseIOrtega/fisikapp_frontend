@@ -3,6 +3,10 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  background: #ffffff;
+}
+
 .layout{
     background: #142050;
     display: flex;

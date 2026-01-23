@@ -1,8 +1,10 @@
 import PlantillaAuth from "../componentes/PlantillaAuth";
-import "./Registrar.css";
-import { useState } from "react";
-import RegistrarModal from "./RegistrarModal";
+import RegistrarExitoModal from "./RegistrarExitoModal";
 import RegistrarErrorModal from "./RegistrarErrorModal";
+import RegistrarTieneCuentaModal from "./RegistrarTieneCuentaModal";
+import { useState } from "react";
+import "./Registrar.css";
+
 
 function Registrar() {
   const [form, setForm] = useState({
@@ -14,6 +16,8 @@ function Registrar() {
 
   const [mostrarModalExito, setMostrarModalExito] = useState(false);
   const [mostrarModalError, setMostrarModalError] = useState(false);
+  const [mostrarModalTieneCuenta, setMostrarModalTieneCuenta] = useState(false);
+
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -26,6 +30,12 @@ function Registrar() {
       setMostrarModalError(true);
       return;
     }
+
+    // ESTE CASO SE USARÁ CUANDO HAYA BACKEND
+    // if (correoYaRegistrado) {
+    //   setMostrarModalTieneCuenta(true);
+    //   return;
+    // }
 
     setMostrarModalExito(true);
   };
@@ -85,8 +95,10 @@ function Registrar() {
         </a>
       </form>
 
-      <RegistrarModal mostrar={mostrarModalExito} cerrar={() => setMostrarModalExito(false)}/>
+      <RegistrarExitoModal mostrar={mostrarModalExito} cerrar={() => setMostrarModalExito(false)}/>
       <RegistrarErrorModal mostrar={mostrarModalError} cerrar={() => setMostrarModalError(false)}/>
+      <RegistrarTieneCuentaModal mostrar={mostrarModalTieneCuenta} cerrar={() => setMostrarModalTieneCuenta(false)}/>
+
 
     </PlantillaAuth>
   );

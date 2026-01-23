@@ -1,6 +1,6 @@
 
 
-function RegistrarModal({ mostrar, cerrar }) {
+function RegistrarExitoModal({ mostrar, cerrar }) {
   if (!mostrar) return null;
 
   return (
@@ -14,4 +14,4 @@ function RegistrarModal({ mostrar, cerrar }) {
   );
 }
 
-export default RegistrarModal;
+export default RegistrarExitoModal;

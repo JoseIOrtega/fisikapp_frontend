@@ -1,22 +1,9 @@
-.logo-frase-registro{
-    text-align: center;
-    color: #d9d9d9;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 900;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    text-shadow: 0.5px 0.5px 0.2px rgb(12, 12, 12);
-    letter-spacing: 2px;
-}
-
 .formulario-login{
     margin: 0px auto 40px;
-    background: linear-gradient(#0fa169,#39add7);
+    background: linear-gradient(#6dd8a2,#39add7);
     width: 320px;
     border-radius: 15px;
 }
-
 label{
     display: inline-block;
     margin-top: 5px;
@@ -26,7 +13,6 @@ label{
     color: #142050;
     font-weight: bold;
 }
-
 input{
     width: 270px;
     margin-left: 20px;
@@ -35,7 +21,7 @@ input{
     font-size: 15px;
     padding: 3px;
 }
-.boton-crear-cuenta{
+.boton-nueva-contrasena{
     background: #142050;
     color: #d9d9d9;
     font-size: 15px;
@@ -43,22 +29,11 @@ input{
     width: 280px;
     border-radius: 20px;
     margin-top: 5px;
-}
-.boton-tienes-cuenta{
-    display: inline-block;
-    color: #142050;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 40px;
     margin-bottom: 10px;
-    margin-top: 5px;
-    font-weight: bold;
-    padding: 1px;
 }
-
 
 /* ===================== */
-/* MODAL Registro */
+/* MODAL Restablecer contraseña */
 /* ===================== */
 
 .modal-registro {
