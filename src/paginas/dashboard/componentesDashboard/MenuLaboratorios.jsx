@@ -1,6 +1,6 @@
 import '../../../styles/dashboard/MenuLaboratorios.css'
 import SignoMas from '../../../assets/dashboard/icono-signo-mas2.jpg'
-import UnirseLaboratorioModal from '../modales/UnirseLaboratorioModal'
+import UnirseLaboratorioModal from '../modalesDashboard/UnirseLaboratorioModal'
 import { useState } from 'react';
 
 function MenuLaboratorios() {
