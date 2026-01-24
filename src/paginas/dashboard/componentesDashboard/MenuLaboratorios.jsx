@@ -11,7 +11,7 @@ function MenuLaboratorios() {
   return (
     <div>
 
-        <h4>aqui Va imagen y configuracion del menu</h4>
+        aqui Va imagen y configuracion del menu
 
         
         <UnirseLaboratorioModal visible={mostrarModalUnirse} 
