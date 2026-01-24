@@ -36,6 +36,35 @@
     width: 88%;
     border-left: 1px solid #00e6ca;
 }
+.cabecera-titulo-principal{
+    display: block;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 6px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.cabecera-nombre-usuario{
+    display: flex;
+    margin-left: 10px;
+    margin-right:5px;
+    font-size: 20px;
+    /*color: #00e6ca;*/
+    color: rgb(215, 203, 223);
+}
+.icono-usuario{ 
+    width: 30px;
+    height: 30px;
+}
+span{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.icono-menu-mas{
+    display: block;
+    width: 6%;
+    margin-right: 20px;
+}
 .icono-cerrar-sesion{
     width: 6%;
 }
@@ -44,7 +73,7 @@
     margin-top: 10px;
 }
 .contenido-principal{
-    background: rgb(177, 176, 176);
+    
     flex: 1; /* ocupa el espacio restante */
     margin-top: 15px;
     margin-left: 40px;

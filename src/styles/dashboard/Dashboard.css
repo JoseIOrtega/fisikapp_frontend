@@ -1,1 +1,31 @@
+.buscador-laboratorios{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    justify-content: center;
+}
 
+
+/*AQUI VA  LOS ESTILOS QUE AGREGUES (ALEXANDRA)*/
+
+
+
+.principal-contenedor-texto-titulo{
+    text-align: center;
+    margin-top: 150px;
+    color: #1e3a8a;
+}
+.principal-contenedor-texto-secundario{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #1e3a8a;
+}
+.contenedor-tarjetas{
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
