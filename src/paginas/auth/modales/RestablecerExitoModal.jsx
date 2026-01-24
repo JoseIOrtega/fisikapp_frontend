@@ -1,3 +1,5 @@
+import '../../../styles/auth/Modales.css'
+
 import { useNavigate } from "react-router-dom";
 
 function RestablecerExitoModal({ mostrar, cerrar }) {

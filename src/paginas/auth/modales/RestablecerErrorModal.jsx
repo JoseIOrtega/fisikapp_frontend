@@ -1,3 +1,5 @@
+import '../../../styles/auth/Modales.css'
+
 function RestablecerErrorModal({ mostrar, cerrar }) {
 
   if (!mostrar) return null;

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../../../styles/auth/Modales.css'
 
 function RecuperarContrasenaModal({ mostrar, cerrar }) {
 

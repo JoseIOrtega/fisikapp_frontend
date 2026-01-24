@@ -1,3 +1,5 @@
+import '../../../styles/auth/Modales.css'
+
 import { Link } from "react-router-dom";
 
 function RegistrarTieneCuentaModal({ mostrar, cerrar }) {

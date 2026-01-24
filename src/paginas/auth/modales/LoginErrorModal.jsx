@@ -1,3 +1,4 @@
+import '../../../styles/auth/Modales.css'
 
 function LoginErrorModal({ mostrar, cerrar }) {
 
