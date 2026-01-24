@@ -1,15 +1,29 @@
 
 import logo from "../assets/dashboard/logo1.jpeg";
 import iconoSalir from "../assets/dashboard/icono-salir.jpg";
+import '../styles/componentes/PlantillaDashboard.css'
 
-function PlantillaDashboard({ children }) {
+function PlantillaDashboard({ 
+  titulo="Jose", 
+  usuario="csasd", 
+  rol, 
+  children 
+}) {
   return (
-    <div className="layout">
-      
+    <div className="layout-dashboard">
+
       <header className="cabecera">
-        <div className="imagen-logo">
-          <img src={logo} alt="logo" className="logo" />
+        <div className="imagen-logo-dashboard">
+          <img src={logo} alt="logo" className="logo-dashboard" />
         </div>
+
+        <div className="cabecera-texto">
+          <h1 className="cabecera-titulo">{titulo}</h1>
+          <h2 className="cabecera-usuario">
+            {usuario} - {rol}
+          </h2>
+        </div>
+
         <div className="icono-cerrar-sesion">
           <img className="icono-salir" src={iconoSalir} alt="salir" />
         </div>
@@ -22,5 +36,6 @@ function PlantillaDashboard({ children }) {
     </div>
   );
 }
+
 
 export default PlantillaDashboard;

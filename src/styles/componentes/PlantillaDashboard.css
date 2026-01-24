@@ -1,0 +1,53 @@
+.layout-dashboard{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.cabecera{
+    display: flex;
+    background: #142050;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 15px;
+    height: 80px;
+    padding: 1px;
+}
+.imagen-logo-dashboard{
+    display: flex;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    margin-left: 10px;
+}
+.logo-dashboard{
+    width: 70px;
+    margin-top: auto 20px;
+}
+.a-imagen-logo{
+    display: flex;
+    text-decoration: none;
+}
+.cabecera-texto{
+    width: 88%;
+    border-left: 1px solid #00e6ca;
+}
+.icono-cerrar-sesion{
+    width: 6%;
+}
+.icono-salir{
+    width: 60px;
+    margin-top: 10px;
+}
+.contenido-principal{
+    background: rgb(177, 176, 176);
+    flex: 1; /* ocupa el espacio restante */
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: hidden; /* evita doble scroll */
+}
