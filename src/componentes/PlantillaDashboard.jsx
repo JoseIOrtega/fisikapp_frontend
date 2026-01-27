@@ -9,7 +9,8 @@ function PlantillaDashboard({
   usuario, 
   rol,
   acciones, 
-  children 
+  children ,
+  onbuscar
 }) {
   return (
     <div className="layout-dashboard">
@@ -34,11 +35,19 @@ function PlantillaDashboard({
           <img className="icono-salir" src={iconoSalir} alt="salir" />
         </div>
       </header>
-
+  
       <section className="contenido-principal">
+        <div className="buscador-laboratorios">
+          <input
+            type="text"
+            placeholder="Buscar laboratorio por nombre..."
+            className="input-buscador"
+            onChange={(e) => onbuscar && onbuscar(e.target.value)}
+          />
+        </div>
+        
         {children}
       </section>
-
     </div>
   );
 }

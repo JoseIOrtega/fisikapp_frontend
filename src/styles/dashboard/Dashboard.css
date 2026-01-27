@@ -7,6 +7,15 @@
 
 
 /*AQUI VA  LOS ESTILOS QUE AGREGUES (ALEXANDRA)*/
+.input-buscador {
+  width: 100%;
+  max-width: 9000px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
 
 
 

@@ -17,7 +17,7 @@ function Dashboard() {
       acciones={<MenuLaboratorios />}
     >
       <div class="buscador-laboratorios">
-        ......Aqui va el input del buscador(ALEXANDRA)
+        
       </div>
 
       {cargando ? (
