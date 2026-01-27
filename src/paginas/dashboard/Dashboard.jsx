@@ -1,12 +1,15 @@
+import { useState } from "react";
 import PlantillaDashboard from "../../componentes/PlantillaDashboard";
 import MenuLaboratorios from "./componentesDashboard/MenuLaboratorios";
 import TarjetaLaboratorio from "./componentesDashboard/TarjetaLaboratorio";
 import '../../styles/dashboard/Dashboard.css'
 
 function Dashboard() {
-
+  
+  const [busqueda, setBusqueda] = useState("");
   const laboratorios = []; // luego backend
   const cargando = false;  // luego true mientras fetch
+   
 
 
   return (
@@ -15,8 +18,17 @@ function Dashboard() {
       usuario="Nombre de Usuario" 
       rol=""
       acciones={<MenuLaboratorios />}
+
     >
+
       <div class="buscador-laboratorios">
+        <input
+          type="text"
+          placeholder="Buscar laboratorio por nombre..."
+          className="input-buscador"
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+        />
         
       </div>
 

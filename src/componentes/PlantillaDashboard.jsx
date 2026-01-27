@@ -37,14 +37,6 @@ function PlantillaDashboard({
       </header>
   
       <section className="contenido-principal">
-        <div className="buscador-laboratorios">
-          <input
-            type="text"
-            placeholder="Buscar laboratorio por nombre..."
-            className="input-buscador"
-            onChange={(e) => onbuscar && onbuscar(e.target.value)}
-          />
-        </div>
         
         {children}
       </section>
