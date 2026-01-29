@@ -10,7 +10,6 @@ function PlantillaDashboard({
   rol,
   acciones, 
   children ,
-  onbuscar
 }) {
   return (
     <div className="layout-dashboard">
