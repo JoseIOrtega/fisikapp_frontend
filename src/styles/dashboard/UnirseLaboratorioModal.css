@@ -1,16 +1,66 @@
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.4);
+  background: rgba(15, 14, 14, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
 }
+
 .modal-contenido {
-  background: white;
+  background: #f3e8e8;
+  width: 420px;
+  border: 5px solid #e7dfdf;
+  border-radius: 15px;
   padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 420px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
+
+.modal-titulo {
+  background-color: #058b58;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: -15px -15px 15px -15px;
+}
+
+.modal-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-form label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.modal-form input {
+  flex: 5;
+  padding: 4px;
+  border: 1px solid #02060e;
+}
+
+.modal-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-unirse {
+  flex: 1;
+  background-color: #819ed3;
+  border: 1px solid #0a0a0a;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  flex: 1;
+  background-color: #c0acac;
+  border: 1px solid #0b0c0c;
+  padding: 5px;
+  cursor: pointer;
+}
+
