@@ -7,6 +7,20 @@
 
 
 /*AQUI VA  LOS ESTILOS QUE AGREGUES (ALEXANDRA)*/
+.input-buscador {
+  width: 100%;
+  max-width: 9000px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.input-buscador:focus {
+  outline: none;
+  border-color: #2ec4b6;        /* Verde agua marina */
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.3);
+}
+
 
 
 

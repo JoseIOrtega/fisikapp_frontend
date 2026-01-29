@@ -9,7 +9,7 @@ function PlantillaDashboard({
   usuario, 
   rol,
   acciones, 
-  children 
+  children ,
 }) {
   return (
     <div className="layout-dashboard">
@@ -34,11 +34,11 @@ function PlantillaDashboard({
           <img className="icono-salir" src={iconoSalir} alt="salir" />
         </div>
       </header>
-
+  
       <section className="contenido-principal">
+        
         {children}
       </section>
-
     </div>
   );
 }
