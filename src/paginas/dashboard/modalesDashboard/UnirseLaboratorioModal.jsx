@@ -1,7 +1,7 @@
 import "../../../styles/dashboard/UnirseLaboratorioModal.css";
 
 function UnirseLaboratorioModal({ visible, onClose, onSubmit }) {
-  if (visible) return null;
+  if (!visible) return null;
 
   return (
     <div className="modal">
