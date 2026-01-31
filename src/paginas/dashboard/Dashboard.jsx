@@ -7,7 +7,14 @@ import '../../styles/dashboard/Dashboard.css'
 function Dashboard() {
   
   const [busqueda, setBusqueda] = useState("");
-  const laboratorios = []; // luego backend
+  const laboratorios = [
+    {
+    laboratorio_id: 1,
+    nombre: "Tiro parabólico",
+    tema: "Cinemática",
+    creador: true
+  }
+  ]; // luego backend
   const cargando = false;  // luego true mientras fetch
    
 
@@ -21,7 +28,7 @@ function Dashboard() {
 
     >
 
-      <div class="buscador-laboratorios">
+      <div className="buscador-laboratorios">
         <input
           type="text"
           placeholder="Buscar laboratorio por nombre..."
@@ -46,7 +53,10 @@ function Dashboard() {
       ) : (
         <div className="contenedor-tarjetas">
           {laboratorios.map((lab) => (
-            <TarjetaLaboratorio key={lab.laboratorio_id} laboratorio={lab} />
+            <TarjetaLaboratorio
+             key={lab.laboratorio_id}
+              laboratorio={lab} 
+              />
           ))}
         </div>
       )}
